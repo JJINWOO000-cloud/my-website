@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+        background-image: url('BASKET.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      
+}
+
+header {
+    background: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.CHOITURDAY {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar {
+    background: #f4f4f4;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.menu-toggle .bar {
+    background: #333;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+}
+
+/* Content Sections */
+.content-section {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #f4f4f4;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        align-items: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+    #g,#f,#c,#h{
+        background-color: #f4f4f4; /* Light gray background */
+        border: 1px solid #ddd; /* Light gray border */
+        padding: 20px; /* Space inside the element */
+        margin: 10px; /* Space outside the element */
+        text-align: center; /* Center text */
+        border-radius: 5px; /* Rounded corners */
+        max-width: 300px; /* Maximum width */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+}
