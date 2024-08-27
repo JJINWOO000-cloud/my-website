@@ -108,4 +108,19 @@ header {
         max-width: 300px; /* Maximum width */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     }
+    /* Styles for devices with a max-width of 768px (tablets and mobile) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Styles for devices with a max-width of 480px (mobile) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
 }
